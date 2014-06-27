@@ -130,7 +130,7 @@
         preloader: true
     }
 
-    //Slider Text On Icon Slide 
+    //Slider Text On Icon Slide
     var sequence = $(".home-screen-slider").sequence(SliderOptions).data("sequence");
     sequence.beforeNextFrameAnimatesIn = function () {
         flexSlider.flexAnimate(sequence.nextFrameID - 1);
@@ -151,9 +151,9 @@ $(window).load(function () {
     //#region Initilize Google Map
     if ($("#gmap").length) {
 
-        var myLatlng = new google.maps.LatLng(-33.82629, 151.05678);//Defines Location
+        var myLatlng = new google.maps.LatLng(48.1883015,16.3373223);//Defines Location
         var mapOptions = {
-            zoom: 15,//Defines Zoom Level
+            zoom: 17,//Defines Zoom Level
             center: myLatlng,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }

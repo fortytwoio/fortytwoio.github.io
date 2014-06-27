@@ -276,7 +276,7 @@ div.hz-divider.x-large {
   background-position: center center;
   background-repeat: no-repeat;
 }
-.home-screen .home-screen-slider .frame .icon i {
+.home-screen .home-screen-slider .frame .icon i, .home-screen .home-screen-slider .frame .icon img {
   display: block;
   -moz-transform: rotate(-360deg);
   -ms-transform: rotate(-360deg);
@@ -300,7 +300,7 @@ div.hz-divider.x-large {
   -webkit-transition-duration: 2s;
   transition-duration: 2s;
 }
-.home-screen .home-screen-slider .frame.animate-in .icon i {
+.home-screen .home-screen-slider .frame.animate-in .icon i,.home-screen .home-screen-slider .frame.animate-in .icon img {
   -moz-transition-duration: 2s;
   -o-transition-duration: 2s;
   -webkit-transition-duration: 2s;
@@ -327,7 +327,7 @@ div.hz-divider.x-large {
   -webkit-transition-duration: 1.5s;
   transition-duration: 1.5s;
 }
-.home-screen .home-screen-slider .frame.animate-out .icon i {
+.home-screen .home-screen-slider .frame.animate-out .icon i,.home-screen .home-screen-slider .frame.animate-out .icon img {
   -moz-transition-duration: 1.5s;
   -o-transition-duration: 1.5s;
   -webkit-transition-duration: 1.5s;
