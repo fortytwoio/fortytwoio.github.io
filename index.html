@@ -1,17 +1,223 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>forty-two.io</title>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <title>forty-two.io</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/pace/0.4.17/pace.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="vendors/flexSlider/flexslider.css" rel="stylesheet" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Bree+Serif|Roboto:400,300,700" rel="stylesheet">
 </head>
 <body>
-<div class="container-flui">
-	<div class="jumbotron">
-		<h1>forty-two.io</h1>
-	</div>
-</div>
+<nav class="site-navigation navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">forty-two.io</a>
+    </div>
+    <div class="collapse navbar-collapse" id="main-nav-collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home-screen">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<section id="home-screen" class="home-screen full-screen">
+    <div class="home-screen-slider">
+        <ul class="sequence-canvas">
+            <li class="frame">
+                <div class="icon-shadow-wrap">
+                    <div class="icon"><img src="img/logo-circle.png" class="img-responsive"></div>
+                </div>
+            </li>
+            <li class="frame">
+                <div class="icon-shadow-wrap">
+                    <div class="icon"><i class="icon-seo-code-optimization3"></i></div>
+                </div>
+            </li>
+            <li class="frame">
+                <div class="icon-shadow-wrap">
+                    <div class="icon"><i class="icon-seo-analityc-3"></i></div>
+                </div>
+
+            </li>
+            <li class="frame">
+                <div class="icon-shadow-wrap">
+                    <div class="icon"><i class="icon-seo-mobile-marketing3"></i></div>
+                </div>
+            </li>
+        </ul>
+        <a class="prev-slide home-screen-slider-nav" href="#prev-slide"><i class="fa fa-angle-left"></i></a>
+        <a class="next-slide home-screen-slider-nav" href="#next-slide"><i class="fa fa-angle-right"></i></a>
+    </div>
+    <div class="brand-text-slider">
+        <div class="brand-text-slider-inner flexslider">
+            <ul class="slides">
+                <li>
+                    <h2>We Are <b>forty-two.io</b></h2>
+                </li>
+                <li>
+                    <h2>We Build <b>Your</b></h2>
+                </li>
+                <li>
+                    <h2><b>Mobile</b> Ready</h2>
+                </li>
+                <li>
+                    <h2><b>Web Application</b></h2>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <a href="#services" class="next-screen animated fadeInUpBig"><i class="fa fa-angle-double-down"></i></a>
+</section>
+<section id="services" class="services ">
+    <article class="service-item service-item-left-align">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4"><i class="service-icon icon-seo-page-quality3" data-animation="rotateIn"></i>
+                </div>
+                <div class="col-sm-offset-1 col-sm-7 service-content">
+                    <h2 class="service-title" data-animation="fadeInRightBig">Quality</h2>
+
+                    <div class="service-text" data-animation="fadeInRightBig" data-animation-delay=".2s">
+                        <p>We build high performance and secure, mobile ready web applications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="service-item service-item-right-align theme-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-4 visible-xs">
+                    <i class="service-icon icon-seo-mobile-marketing3" data-animation="rotateIn"></i></div>
+                <div class="col-sm-7  service-content">
+                    <h2 class="service-title" data-animation="fadeInLeftBig">Batteries included</h2>
+
+                    <div class="service-text" data-animation="fadeInLeftBig" data-animation-delay=".2s">
+                        <p>We design your web application in a modular and service oriented way to make sure that you are able to extend or adjust it in the future, without rewriting it from scratch</p>
+                    </div>
+                </div>
+                <div class="col-sm-offset-1 col-sm-4 hidden-xs">
+                    <i class="service-icon icon-seo-mobile-marketing3" data-animation="rotateIn"></i></div>
+            </div>
+        </div>
+    </article>
+    <article class="service-item service-item-left-align">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4"><i class="service-icon icon-seo-landing-page3" data-animation="rotateIn"></i>
+                </div>
+                <div class="col-sm-offset-1 col-sm-7  service-content">
+                    <h2 class="service-title" data-animation="fadeInRightBig">Rapid Development</h2>
+
+                    <div class="service-text" data-animation="fadeInRightBig" data-animation-delay=".2s">
+                        <p>Work Smart. We are highly motivated and always on the edge of tomorrow</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="service-item service-item-right-align theme-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-4 visible-xs">
+                    <i class="service-icon icon-seo-website-design3" data-animation="rotateIn"></i></div>
+                <div class="col-sm-7  service-content">
+                    <h2 class="service-title" data-animation="fadeInLeftBig">Technology</h2>
+
+                    <div class="service-text" data-animation="fadeInLeftBig" data-animation-delay=".2s">
+                        <p>Our tool belt includes, but is not limited to: Neo4j, Node.js, JavaScript, redis, AngularJS, nginx, ReactJS, HTML5, CSS3, Ruby, PHP, Java...<br />Whatever it needs to get the job done
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-offset-1 col-sm-4 hidden-xs">
+                    <i class="service-icon icon-seo-website-design3" data-animation="rotateIn"></i></div>
+            </div>
+        </div>
+    </article>
+</section>
+<section id="contact" class="contact">
+    <div class="container">
+        <header class="contact-section-header">
+            <h2 class="contact-section-title" data-animation="fadeInUp">Get In Touch</h2>
+
+            <p class="contact-section-subtitle" data-animation="fadeInUp" data-animation-delay=".05s">We’re currently accepting new client projects. We look forward to serving you.</p>
+        </header>
+        <div class="row">
+            <div class="col-sm-9">
+                <div id="mc_embed_signup">
+                    <form class="contact-form" action="http://forty-two.us8.list-manage1.com/subscribe/post?u=7d6582e9c7822ae61b572a5a1&amp;id=bf740a7dd1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <input type="email" value="" name="EMAIL" class="required email form-control" placeholder="E-Mail" data-animation="fadeInLeftBig" required="required" id="mce-EMAIL">
+                        <input type="text" value="" name="FULLNAME" class="required form-control" id="mce-FNAME" placeholder="Full Name" required="required" data-animation="fadeInLeftBig" data-animation-delay=".1s">
+                        <textarea placeholder="Message" rows="10" type="text" value="" name="MESSAGE" class="form-control required form-control" id="mce-MMERGE3" data-animation="fadeInLeftBig" data-animation-delay=".2s" required="required"></textarea>
+
+                        <div style="position: absolute; left: -5000px;">
+                            <input type="text" name="b_7d6582e9c7822ae61b572a5a1_bf740a7dd1" tabindex="-1" value="">
+                        </div>
+                        <div class="clear">
+                            <button data-animation="fadeInLeftBig" data-animation-delay=".3s" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-brand btn-lg"> Send Message&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-circle-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-3 contact-details">
+                <h3 class="contact-details-title" data-animation="fadeInRightBig">Contact Details</h3>
+
+                <p data-animation="fadeInRightBig" data-animation-delay=".1s">
+                    <a href="mailto:mail@forty-two.io">mail@forty-two.io</a></p>
+
+                <p data-animation="fadeInRightBig" data-animation-delay=".2s">
+                    <a href="tel:+436643420062">(+43) 6643420062</a></p>
+
+                <p data-animation="fadeInRightBig" data-animation-delay=".3s"> forty-two.io,<br /> Graumanngasse 7 / Top 5 / Stock 5,<br /> 1150 Wien,<br /> Österreich.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="map-holder">
+        <div class="map" id="gmap"></div>
+        <a href="#map-toggle" class="btn map-toggle-back btn-lg"><i class="fa fa-angle-left"></i>Hide</a>
+
+        <div class="map-overlay">
+            <span class="bg-icon-abstract fa fa-map-marker"></span>
+            <i class="map-icon fa fa-map-marker" data-animation="bounceIn"></i> <br />
+            <a href="#map-toggle" class="map-toggle btn" data-animation="bounceIn" data-animation-delay=".2s">Our Location</a>
+        </div>
+    </div>
+</section>
+<footer class="main-footer">
+    <section class="socials">
+        <div class="container">
+            <a href="https://twitter.com/fortytwoio" data-animation="bounceIn" data-animation-delay=".4s">
+                <img src="icons/socials/01_twitter.png" alt="socialLinkIcon" /></a>
+            <a href="https://www.facebook.com/fortytwoio" data-animation="bounceIn" data-animation-delay=".3s">
+                <img src="icons/socials/02_facebook.png" alt="socialLinkIcon" /></a>
+            <a href="https://plus.google.com/116069307366974132521" data-animation="bounceIn" data-animation-delay=".2s">
+                <img src="icons/socials/14_google-plus.png" alt="socialLinkIcon" /></a>
+        </div>
+    </section>
+    <section class="copyright">
+        <p>&copy; forty-two.io</p>
+    </section>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mixitup/1.5.6/jquery.mixitup.min.js"></script>
+<script src="vendors/flexSlider/jquery.flexslider-min.js"></script>
+<script src="vendors/sequence/jquery.sequence-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="js/initializer.js"></script>
 </body>
 </html>
