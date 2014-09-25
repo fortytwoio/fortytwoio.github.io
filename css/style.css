@@ -300,28 +300,6 @@ h6 {
     text-shadow:         none;
 }
 
-::-webkit-scrollbar {
-    width:  10px;
-    height: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: rgba(113, 112, 107, 0.2);
-}
-
-::-webkit-scrollbar-thumb:vertical {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-::-webkit-scrollbar-thumb:vertical:hover,
-::-webkit-scrollbar-thumb:horizontal:hover {
-    background: #34495e;
-}
-
-::-webkit-scrollbar-thumb:horizontal {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
 div.hz-divider {
     margin:           15px 0;
     clear:            both;
@@ -549,10 +527,6 @@ div.hz-divider.x-large {
     margin-left:                 -125px;
     margin-top:                  -125px;
     color:                       #ffffff;
-    -moz-transition-duration:    0.01s;
-    -o-transition-duration:      0.01s;
-    -webkit-transition-duration: 0.01s;
-    transition-duration:         0.01s;
 }
 
 .home-screen .home-screen-slider .frame .icon {
@@ -563,31 +537,12 @@ div.hz-divider.x-large {
     text-align:        center;
     line-height:       250px;
     font-size:         240px;
-    -moz-transform:    translateX(-500%);
-    -ms-transform:     translateX(-500%);
-    -o-transform:      translateX(-500%);
-    -webkit-transform: translateX(-500%);
-    transform:         translateX(-500%);
 }
 
 @media (max-width: 380px) {
     .home-screen .home-screen-slider .frame .icon {
         font-size: 200px;
     }
-}
-
-.home-screen .home-screen-slider .frame .icon:after {
-    content:             "";
-    display:             inline-block;
-    position:            absolute;
-    top:                 120%;
-    left:                0;
-    width:               100%;
-    margin-top:          -26px;
-    height:              52px;
-    background-image:    url(../img/slider-icon-shadow.png);
-    background-position: center center;
-    background-repeat:   no-repeat;
 }
 
 .home-screen .home-screen-slider .frame .icon i, .home-screen .home-screen-slider .frame .icon img {
@@ -666,8 +621,7 @@ div.hz-divider.x-large {
     bottom:     10%;
     position:   absolute;
     width:      100%;
-    padding:    40px 5%;
-    /*z-index: 10;*/
+    padding:    0 5%;
 }
 
 .home-screen .brand-text-slider,
@@ -1033,6 +987,10 @@ div.hz-divider.x-large {
     font-size:   1.5em;
     font-weight: normal;
     font-family: 'Bree Serif', 'Roboto', serif;
+}
+
+.navbar-default .navbar-brand {
+    color: #34495E;
 }
 
 .navbar-default .navbar-nav > a {
