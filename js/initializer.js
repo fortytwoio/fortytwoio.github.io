@@ -1,16 +1,15 @@
 ﻿$(function () {
 
-
     //#region Initialize On Scroll Animations
     if (!Modernizr.touch && Modernizr.cssanimations) {
         $('[data-animation-delay]').each(function () {
             var animationDelay = $(this).data("animation-delay");
             $(this).css({
                 "-webkit-animation-delay": animationDelay,
-                "-moz-animation-delay":    animationDelay,
-                "-o-animation-delay":      animationDelay,
-                "-ms-animation-delay":     animationDelay,
-                "animation-delay":         animationDelay
+                "-moz-animation-delay": animationDelay,
+                "-o-animation-delay": animationDelay,
+                "-ms-animation-delay": animationDelay,
+                "animation-delay": animationDelay
             });
 
         });
@@ -18,7 +17,7 @@
             if (direction == "down") {
                 $(this).addClass("animated " + $(this).data("animation"));
             }
-        }, { offset: '90%' }).waypoint(function (direction) {
+        }, {offset: '90%'}).waypoint(function (direction) {
             if (direction == "up") {
                 $(this).removeClass("animated " + $(this).data("animation"));
             }
@@ -51,7 +50,7 @@
         var scrollToElm = $($(this).attr("href"));
         if (scrollToElm.length) {
             evt.preventDefault();
-            $("body,html").animate({ scrollTop: scrollToElm.offset().top }, 500);
+            $("body,html").animate({scrollTop: scrollToElm.offset().top}, 500);
         }
     });
     //#endregion Scroll On Navbar-Link Click
@@ -76,7 +75,7 @@
     $(".portfolio-container").mixitup({
         targetSelector: ".portfolio-item",
         filterSelector: ".portfolio-filtering a",
-        onMixEnd:       function () {
+        onMixEnd: function () {
             $.waypoints('refresh');
         }
     });
@@ -94,43 +93,20 @@
     //#endregion Show/hide Google Map
 
 
-    //#region Home Screen Sliders
-
-    //Text Rotator In Homescreen
-    var flexSlider = $('.flexslider').flexslider({
-        animation:      "slide",
-        direction:      "vertical",
-        controlNav:     false,
-        directionNav:   false,
-        touch:          false,
-        keyboard:       false,
-        pauseOnAction:  false,
-        slideshow:      false,
-        animationSpeed: 1000
-
-    }).data('flexslider');
-
-
     //Icon Slider In Homescreen
     var SliderOptions = {
-        autoPlay:                                 true,
-        autoPlayDelay:                            3000,
-        pauseOnHover:                             false,
-        animateStartingFrameIn:                   true,
-        transitionThreshold:                      true,
-        fadeFrameWhenSkipped:                     false,
+        autoPlay: true,
+        autoPlayDelay: 3000,
+        pauseOnHover: false,
+        animateStartingFrameIn: true,
+        transitionThreshold: true,
+        fadeFrameWhenSkipped: false,
         reverseAnimationsWhenNavigatingBackwards: false,
-        nextButton:                               ".next-slide.home-screen-slider-nav",
-        prevButton:                               ".prev-slide.home-screen-slider-nav",
+        nextButton: ".next-slide.home-screen-slider-nav",
+        prevButton: ".prev-slide.home-screen-slider-nav",
         //pauseButton:".play-pause-home-screen-slider",
-        preloader:                                true
+        preloader: true
     }
-
-    //Slider Text On Icon Slide
-    var sequence = $(".home-screen-slider").sequence(SliderOptions).data("sequence");
-    sequence.beforeNextFrameAnimatesIn = function () {
-        flexSlider.flexAnimate(sequence.nextFrameID - 1);
-    };
 
     //Prevent Scrolling On Slider Next/Prev Navigation
     $(SliderOptions.nextButton + "," + SliderOptions.prevButton).click(function (evt) {
@@ -149,16 +125,16 @@ $(window).load(function () {
 
         var myLatlng = new google.maps.LatLng(48.1883015, 16.3373223);//Defines Location
         var mapOptions = {
-            zoom:      17,//Defines Zoom Level
-            center:    myLatlng,
+            zoom: 17,//Defines Zoom Level
+            center: myLatlng,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(document.getElementById('gmap'), mapOptions);
 
         var marker = new google.maps.Marker({
             position: myLatlng,  //Map Marker
-            map:      map,
-            title:    'We Are Here'  //Marker Title
+            map: map,
+            title: 'We Are Here'  //Marker Title
         });
     }
     //#endregion Initilize Google Map
